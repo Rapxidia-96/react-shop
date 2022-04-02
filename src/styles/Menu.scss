@@ -1,11 +1,26 @@
 @import 'vars';
 
+@keyframes swipeTop {
+	0% {
+	  height: 0;
+	}
+	100% {
+	  height: auto;
+	}
+  }
+
 .Menu {
 	width: 100px;
 	height: auto;
 	border: 1px solid var(--very-light-pink);
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
+	position: absolute;
+	top: 65px;
+	right: 50px;
+	background-color: var(--white);
+
+	animation: swipeTop 0.26s ease;
 }
 .Menu ul {
 	list-style: none;
